@@ -71,3 +71,30 @@ ls -la /home/researcher2/projects/patient_data.txt
 
 ## 🏁 Outcome
 Successfully restricted access to sensitive patient data. This aligns with the Principle of Least Privilege and mitigates the risk of internal data leaks.
+echo "# Cybersecurity-Portfolio" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/YourUsername/Cybersecurity-Portfolio.git
+git push -u origin main
+# Linux File Permissions: Securing Research Data
+
+## 📖 Scenario
+I am a security analyst at a research hospital. The lead researcher, `researcher2`, stores sensitive patient trial data in the `/home/researcher2/projects/` directory. My task was to review the current permissions and restrict unauthorized access to ensure only the `researcher2` user and the `research_team` group have access.
+
+## 🎯 Objective
+To enforce the **Principle of Least Privilege** by removing world-readable and write permissions from sensitive files, ensuring only authorized personnel can view or modify them.
+
+## 🛠️ Tools Used
+- Linux Bash Shell
+- Commands: `ls -la`, `chmod`, `sudo`
+
+---
+
+## 🔍 Step 1: Check Current Permissions
+I used `ls -la` to list all files, including hidden ones, and display the permission strings for each.
+
+### Command Entered:
+```bash
+ls -la /home/researcher2/projects/
